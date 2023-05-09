@@ -1,7 +1,12 @@
 fun main(args: Array<String>) {
-    println("Hello World!")
+    val contact = Contact()
+    println("Enter the name of the person:")
+    contact.name = readln()
+    println("Enter the surname of the person:")
+    contact.surnname = readln()
+    println("Enter the number")
+    contact.phone = readln()
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    println("A record created!")
+    println("A Phone Book with a single record created!")
 }
